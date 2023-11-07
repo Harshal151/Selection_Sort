@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- title -->
+  <title>Sorting Visualizer</title>
+
+  <!-- linking style.css -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<!-- body -->
+
+<body>
+  <section class="head">Selection Sort Visualizer</section>
+  <section class="data-container"></section>
+  <section class="content"><i>Selection sort is a simple sorting algorithm. This sorting algorithm is an in-place
+      comparison-based algorithm in which the list is divided into two parts, the sorted part at the left end and the
+      unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire list.
+
+      <br>The smallest element is selected from the unsorted array and swapped with the leftmost element, and that
+      element becomes a part of the sorted array. This process continues moving unsorted array boundary by one element
+      to the right.
+
+      <br>This algorithm is not suitable for large data sets as its average and worst case complexities are of Ο(n<sup>2</sup>),
+      where n is the number of items.</i><br><br><b align="center">Visualization: </b></section>
+
+  <!-- "Generate New Array" button -->
+  <button class="btn1" onclick="generate()" id="Button1">
+    Generate New Array</button>
+
+  <!-- "Selection Sort" button -->
+  <button class="btn2" onclick="SelectionSort(),disable()" id="Button2">
+    Selection Sort</button>
+
+  <!-- "Fast Forward" button-->
+  <button class="btn3" onclick="fastforward(),disable()" id="Button3">
+    Fast Forward</button>
+
+
+
+
+</body>
+
+<!-- linking index.js -->
+<script src="index.js"></script>
+
+</html>
